@@ -1,0 +1,2 @@
+def removeLogin():
+    pass
