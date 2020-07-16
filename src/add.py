@@ -6,9 +6,8 @@ def addLogin():
     with open('config.yaml') as f:
         data = yaml.load(f, Loader=yaml.FullLoader)
 
-    # address = data[0]
-    # TODO: Yaml isn't working
-    client = MongoClient("") # Enter your address in the config.yaml File
+    address = data[0]
+    client = MongoClient(address)
     db = client["passwords"]
     dbcol = db["pwd"]
 
@@ -21,7 +20,7 @@ def addLogin():
         {
             'type': 'input',
             'name': 'password',
-            'message': 'Your Username: ',
+            'message': 'Your Password: ',
         },
         {
             'type': 'input',

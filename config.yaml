@@ -1,3 +1,2 @@
 # Enter here the address of the mongoDB.
-# TODO: Fix the Code to get this working
-address =
+location: ''
