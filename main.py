@@ -1,4 +1,4 @@
-from PyInquirer import prompt 
+from PyInquirer import prompt
 
 from src.add import addLogin
 from src.remove import removeLogin

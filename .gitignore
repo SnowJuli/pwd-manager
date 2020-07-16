@@ -31,6 +31,8 @@ venv.bak/
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
-# This Gitignore is made of 
+# This Gitignore is made of
 # https://github.com/github/gitignore/blob/master/Python.gitignore
 # https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
+
+# Directory specific Files
