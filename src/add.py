@@ -6,7 +6,7 @@ def addLogin():
     with open('config.yaml') as f:
         data = yaml.load(f, Loader=yaml.FullLoader)
 
-    address = data[0]
+    address = data["location"]
     client = MongoClient(address)
     db = client["passwords"]
     dbcol = db["pwd"]
@@ -38,3 +38,4 @@ def addLogin():
     info = dbcol.insert_one(input_dict)
 
     print(info.inserted_id)
+    print("Login added.")
