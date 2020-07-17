@@ -2,8 +2,9 @@ from pymongo import MongoClient
 from PyInquirer import prompt
 import yaml
 
+
 def removeLogin():
-    with open('config.yaml') as f:
+    with open("config.yaml") as f:
         data = yaml.load(f, Loader=yaml.FullLoader)
 
     address = data["location"]
@@ -12,17 +13,11 @@ def removeLogin():
     dbcol = db["pwd"]
 
     addinfo = [
-        {
-            'type': 'input',
-            'name': 'tag',
-            'message': 'Enter the Tag of the Login: ',
-        }
+        {"type": "input", "name": "tag", "message": "Enter the Tag of the Login: ",}
     ]
     options = prompt(addinfo)
 
-    input_tag = {
-        "tag": options["tag"]
-    }
+    input_tag = {"tag": options["tag"]}
 
     dbcol.delete_one(input_tag)
     print("Login deleted.")
