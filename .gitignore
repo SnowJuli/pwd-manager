@@ -36,3 +36,4 @@ __pypackages__/
 # https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
 
 # Directory specific Files
+.pytest_cache/

@@ -1,2 +1,3 @@
 # Enter here the address of the mongoDB.
-location: ''
+# This is the default Value. You may change it if you have a MongoDB shard
+location: 'localhost:27017'
