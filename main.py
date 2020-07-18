@@ -7,36 +7,15 @@ from src.pwd import configurePwd
 
 questions = [
     {
-        'type': 'list',
-        'name': 'action',
-        'message': 'What do you want to do? ',
+        "type": "list",
+        "name": "action",
+        "message": "What do you want to do? ",
         "choices": [
-            {
-                'key': 'a',
-                'name': 'Add a Login Information',
-                'value': "add"
-            },
-            {
-                "key": "r",
-                "name": "Remove a Information ",
-                "value": "remove"
-            },
-            {
-                "key": "l",
-                "name": "Show a list of all Informations",
-                "value": "list"
-            },
-            {
-
-                "key": "c",
-                "name": "Configure the master password",
-                "value": "pwd"
-            },
-            {
-                "key": "q",
-                "name": "Quit",
-                "value": "quit"
-            }
+            {"key": "a", "name": "Add a Login Information", "value": "add"},
+            {"key": "r", "name": "Remove a Information ", "value": "remove"},
+            {"key": "l", "name": "Show a list of all Informations", "value": "list"},
+            {"key": "c", "name": "Configure the master password", "value": "pwd"},
+            {"key": "q", "name": "Quit", "value": "quit"},
         ],
     }
 ]
