@@ -13,7 +13,7 @@ questions = [
         "choices": [
             {"key": "a", "name": "Add a Login Information", "value": "add"},
             {"key": "r", "name": "Remove a Information ", "value": "remove"},
-            {"key": "l", "name": "Show a list of all Informations", "value": "list"},
+            {"key": "l", "name": "Search for a Information", "value": "list"},
             {"key": "c", "name": "Configure the master password", "value": "pwd"},
             {"key": "q", "name": "Quit", "value": "quit"},
         ],
