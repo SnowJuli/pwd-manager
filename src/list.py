@@ -2,6 +2,7 @@ from pymongo import MongoClient
 from PyInquirer import prompt
 import yaml
 
+
 def listLogin():
     with open("config.yaml") as f:
         data = yaml.load(f, Loader=yaml.FullLoader)
@@ -11,9 +12,13 @@ def listLogin():
     db = client["passwords"]
     dbcol = db["pwd"]
 
-    addinfo = {"type": "input", "name": "tag", "message": "Enter the Tag: ",}
+    addinfo = {
+        "type": "input",
+        "name": "tag",
+        "message": "Enter the Tag: ",
+    }
 
     options = prompt(addinfo)
 
-    for x in dbcol.find({},{ "tag": options["tag"] }):
+    for x in dbcol.find({}, {"tag": options["tag"]}):
         print(x)
