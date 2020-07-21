@@ -5,7 +5,7 @@ import yaml
 
 def listLogin():
     with open("config.yaml") as f:
-        data = yaml.load(f, Loader=yaml.FullLoader)
+        data = yaml.safe_load(f, Loader=yaml.FullLoader)
 
     address = data["location"]
     client = MongoClient(address)

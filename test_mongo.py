@@ -6,7 +6,7 @@ import yaml
 
 # Loading the Address
 with open("config.yaml") as f:
-    data = yaml.load(f, Loader=yaml.FullLoader)
+    data = yaml.safe_load(f, Loader=yaml.FullLoader)
 
 # Config
 address = data["location"]
