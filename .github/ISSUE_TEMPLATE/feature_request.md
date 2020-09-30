@@ -2,19 +2,16 @@
 name: Feature request
 about: Suggest an idea for this project
 title: ''
-labels: ''
-assignees: ''
+labels: 'new feature'
+assignees: 'SnowLeoo'
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**What Feature would you like to get implemented**
+A good description of what Feature you are missing.
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Maybe provide Resources for Implemetation**
+A clear and concise info of resources that could be helpful.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
+**Additional infos**
 Add any other context or screenshots about the feature request here.
